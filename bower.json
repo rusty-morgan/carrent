@@ -1,0 +1,26 @@
+{
+  "name": "carrent",
+  "description": "carrent",
+  "main": "index.js",
+  "authors": [
+    "noobteam"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "v4.0.0-alpha.6",
+    "jquery": "^3.2.1",
+    "angular": "^1.6.4",
+    "angular-material": "^1.1.4",
+    "angular-route": "^1.6.4",
+    "angular-ui-router": "^1.0.5"
+  }
+}

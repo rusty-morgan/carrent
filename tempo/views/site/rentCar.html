@@ -1,0 +1,53 @@
+<div class="container-fluid">
+    <div class="row subpage-header">
+        <div class="col-md-12">
+            <h1 class="text-center">
+                Wypożyczenie
+            </h1>
+        </div>
+    </div>
+</div>
+<div class="container order">
+    <div class="row">
+        <div class="col-md-6 col-xs-6">
+            <h5>Zamówienie</h5>
+        </div>
+        <div class="col-md-6 col-xs-6">
+            <p class="text-right">Data zamówienia: 08.07.2017</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <md-content layout-padding>
+                <div>
+                    <form name="userForm">
+
+                        <div layout-gt-xs="row">
+                            <md-input-container class="md-block" flex-gt-sm layout-gt-xs="row">
+                                <md-icon><i class="material-icons">directions_car</i></md-icon>
+                                <label>Samochód</label>
+                                <md-select ng-model="order.carModel">
+                                    <md-option ng-repeat="car in cars" value="{{car.id}}">
+                                        {{car.name + ' ' + car.classText}}
+                                    </md-option>
+                                </md-select>
+                            </md-input-container>
+                            <md-input-container class="md-block" flex-gt-sm>
+                                <label>Data wypożyczenia</label>
+                                <md-datepicker ng-model="order.rentDateStart" md-min-date="mindate"></md-datepicker>
+                            </md-input-container>
+
+                            <md-input-container class="md-block" flex-gt-sm>
+                                <label>Data powrotu</label>
+                                <md-datepicker ng-model="order.rentDateEnd" md-min-date="order.rentDateStart"></md-datepicker>
+                            </md-input-container>
+                        </div>
+
+                        
+
+                    </form>
+                </div>
+            </md-content>
+        </div>
+    </div>
+</div>

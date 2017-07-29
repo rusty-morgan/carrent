@@ -1,0 +1,24 @@
+{
+  "name": "carrent",
+  "version": "1.0.0",
+  "description": "car rent",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "noobteam",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-csso": "^3.0.0",
+    "gulp-if": "^2.0.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-server-livereload": "^1.9.2",
+    "gulp-uglify": "^2.1.2",
+    "gulp-useref": "^3.1.2"
+  },
+  "dependencies": {
+    "connect-modrewrite": "^0.10.1"
+  }
+}
